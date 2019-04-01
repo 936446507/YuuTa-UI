@@ -1,0 +1,102 @@
+@mixin primaryButton {
+  background-color: $themeColor;
+  color: $baseWhiteColor;
+}
+@mixin successButton {
+  background-color: $successColor;
+  color: $baseWhiteColor;
+}
+@mixin infoButton {
+  background-color: $infoColor;
+  color: $baseWhiteColor;
+}
+@mixin dangerButton {
+  background-color: $dangerColor;
+  color: $baseWhiteColor;
+}
+@mixin warningButton {
+  background-color: $warningColor;
+  color: $baseWhiteColor;
+}
+
+.yt-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: $baseWhiteColor;
+  color: $conventionalTextColor;
+  border: 1px solid $FirstLevelBorderColor;
+  border-radius: 4px;
+  text-align: center;
+  line-height: $noneLineHeight;
+  font-size: $contentTextSize;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
+  // type
+  &--primary {
+    @include primaryButton;
+  }
+  &--success {
+    @include successButton;
+  }
+  &--info {
+    @include infoButton;
+  }
+  &--danger {
+    @include dangerButton;
+  }
+  &--warning {
+    @include warningButton;
+  }
+  // plain
+  &--primary.is-plain {
+    color: $themeColor;
+    border: 1px solid $themeColor;
+    background: #ecf5ff;
+    &:hover {
+      @include primaryButton;
+    }
+  }
+  &--success.is-plain {
+    color: $successColor;
+    border: 1px solid $successColor;
+    background: #f0f9eb;
+    &:hover {
+      @include successButton;
+    }
+  }
+  &--info.is-plain {
+    color: $infoColor;
+    border: 1px solid $infoColor;
+    background: #f4f4f5;
+    &:hover {
+      @include infoButton;
+    }
+  }
+  &--danger.is-plain {
+    color: $dangerColor;
+    border: 1px solid $dangerColor;
+    background: #fef0f0;;
+    &:hover {
+      @include dangerButton;
+    }
+  }
+  &--warning.is-plain {
+    color: $warningColor;
+    border: 1px solid $warningColor;
+    background: #fdf6ec;;
+    &:hover {
+      @include warningButton;
+    }
+  }
+  // round
+  .is-round {
+    border-radius: 20px;
+    padding: 12px 23px;
+  }
+  // circle
+  .is-circle {
+    border-radius: 50%;
+    padding: 12px;
+  }
+}
