@@ -90,12 +90,12 @@
     }
   }
   // round
-  .is-round {
+  &.is-round {
     border-radius: 20px;
     padding: 12px 23px;
   }
   // circle
-  .is-circle {
+  &.is-circle {
     border-radius: 50%;
     padding: 12px;
   }

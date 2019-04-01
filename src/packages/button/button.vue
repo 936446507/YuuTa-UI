@@ -33,8 +33,10 @@ export default {
       default: false
     }
   },
-  click() {
-    this.$emit('click')
+  methods: {
+    click() {
+      this.$emit('click')
+    }
   }
 }
 </script>
