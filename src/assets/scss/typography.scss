@@ -1,0 +1,17 @@
+body, html {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+// 字号
+$auxiliaryTextSize: 12px;
+$subContentTextSize: 13px;
+$contentTextSize: 14px;
+$subTitleTextSize: 16px;
+$titleTextSize: 18px;
+$mainTitleTextSize: 20px;
+
+// 行高
+$noneLineHeight: 1;
+$compactLineHeight: 1.3;
+$auxiliaryLineHeight: 1.5;
+$looseLineHeight: 1.7;

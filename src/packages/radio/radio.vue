@@ -10,10 +10,13 @@
 
 <script>
 export default {
-  name: 'yt-radio'
+  name: 'yt-radio',
+  data() {
+    return {}
+  },
 }
 </script>
 
 <style lang="scss">
-@import '../../assets/scss/radio.scss';
+
 </style>
