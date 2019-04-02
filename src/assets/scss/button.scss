@@ -48,6 +48,11 @@
   &--warning {
     @include warningButton;
   }
+  &--text {
+    border: none;
+    background-color: transparent;
+    color: $themeColor;
+  }
   // plain
   &--primary.is-plain {
     color: $themeColor;
@@ -89,6 +94,22 @@
       @include warningButton;
     }
   }
+  // size
+  &--medium {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  &--small {
+    padding: 9px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  &--mini {
+    padding: 7px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
   // round
   &.is-round {
     border-radius: 20px;
@@ -98,5 +119,9 @@
   &.is-circle {
     border-radius: 50%;
     padding: 12px;
+  }
+  // disabled
+  &.is-disabled {
+    cursor: not-allowed;
   }
 }

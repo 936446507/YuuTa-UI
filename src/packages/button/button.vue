@@ -1,13 +1,17 @@
 <template>
   <button
+    :disabled="disabled"
     :class="[
       'yt-button',
       'yt-button--' + type,
+      'yt-button--' + size,
       { 'is-plain': plain },
       { 'is-round': round },
-      { 'is-circle': circle }
+      { 'is-circle': circle },
+      { 'is-disabled': disabled }
     ]"
     @click="click">
+    <i v-if="icon" :class="icon"></i>
     <slot></slot>
   </button>
 </template>
@@ -31,7 +35,13 @@ export default {
     circle: {
       type: Boolean,
       default: false
-    }
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    size: String,
+    icon: String
   },
   methods: {
     click() {

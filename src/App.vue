@@ -36,17 +36,28 @@
       <yt-button type="warning" icon="yt-icon-star-off" circle></yt-button>
       <yt-button type="danger" icon="yt-icon-dytete" circle></yt-button>
     </div>
+
+    <div>
+      <yt-button-group>
+        <yt-button type="primary" icon="el-icon-arrow-left">上一页</yt-button>
+        <yt-button type="primary">下一页<i class="el-icon-arrow-right el-icon--right"></i></yt-button>
+        <yt-button type="primary" icon="el-icon-arrow-left">上一页</yt-button>
+        <yt-button type="primary">下一页<i class="el-icon-arrow-right el-icon--right"></i></yt-button>
+      </yt-button-group>
+    </div>
   </div>
 </template>
 
 <script>
 import YTRadio from './packages/radio/radio'
 import YTButton from './packages/button/button'
+import YTButtonGroup from './packages/button/button-group'
 export default {
   name: 'app',
   components: {
     'yt-radio': YTRadio,
-    'yt-button': YTButton
+    'yt-button': YTButton,
+    'yt-button-group': YTButtonGroup
   },
   data () {
     return {

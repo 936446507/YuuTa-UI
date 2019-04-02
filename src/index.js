@@ -1,7 +1,11 @@
+import YTButton from './packages/button'
+import YTButtonGroup from './packages/button-group'
 import YTRadio from './packages/radio'
 
 const components = [
-  YTRadio
+  YTRadio,
+  YTButton,
+  YTButtonGroup
 ]
 
 const install = function(Vue, opts = {}) {
@@ -17,5 +21,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  YTRadio
+  YTRadio,
+  YTButton,
+  YTButtonGroup
 }
