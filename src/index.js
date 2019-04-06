@@ -2,6 +2,8 @@ import YTButton from './packages/button'
 import YTButtonGroup from './packages/button-group'
 import YTRadio from './packages/radio'
 
+import './assets/font/iconfont.css';
+
 const components = [
   YTRadio,
   YTButton,
