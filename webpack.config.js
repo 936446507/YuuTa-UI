@@ -56,7 +56,11 @@ module.exports = {
             }
         ],
         // loaders: ["style", "css", "sass"]
-     }
+      },
+      {
+        test:/\.(ttf|eot|woff|woff2|svg)$/,
+        use:['file-loader']
+      }
     ]
   },
   resolve: {
