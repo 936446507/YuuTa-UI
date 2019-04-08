@@ -11,7 +11,7 @@
       { 'is-disabled': disabled }
     ]"
     @click="click">
-    <i v-if="icon" :class="icon"></i>
+    <i v-if="icon" :class="['yt-icon-font', icon]"></i>
     <slot></slot>
   </button>
 </template>

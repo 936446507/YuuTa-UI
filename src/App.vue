@@ -45,6 +45,14 @@
         <yt-button type="primary">下一页<i class="el-icon-arrow-right el-icon--right"></i></yt-button>
       </yt-button-group>
     </div>
+
+    <div class="swiper-wrapper" style="width: 500px; height: 300px;">
+      <yt-swiper :options="{isLoop: true, isVertical: false, isAutoPlay: true}">
+          <yt-swiper-item v-for="n in 6" :key="n" :name="`name${n}`">
+            <div style="width: 100%; height: 100%; border: 1px solid #ccc; box-sizing: border-box;">{{ n }}</div>
+          </yt-swiper-item>
+      </yt-swiper>
+    </div>
   </div>
 </template>
 
@@ -52,12 +60,16 @@
 import YTRadio from './packages/radio/radio'
 import YTButton from './packages/button/button'
 import YTButtonGroup from './packages/button/button-group'
+import YTSwiper from './packages/swiper/swiper'
+import YTSwiperItem from './packages/swiper/swiper-item'
 export default {
   name: 'app',
   components: {
     'yt-radio': YTRadio,
     'yt-button': YTButton,
-    'yt-button-group': YTButtonGroup
+    'yt-button-group': YTButtonGroup,
+    'yt-swiper': YTSwiper,
+    'yt-swiper-item': YTSwiperItem
   },
   data () {
     return {
